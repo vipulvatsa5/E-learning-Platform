@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 // Use environment variable for MongoDB URI
-const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://codevipul42:vipulKumar%40123@cluster0.hihxsar.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURI = process.env.MONGODB_URI;
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, {
